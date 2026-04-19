@@ -148,4 +148,12 @@ h2 {
 
 .member-card h3 {
     color: #c9a96e;
+a {
+    color: #c9a96e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 5px #c9a96e;
+}
 }
