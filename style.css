@@ -1,17 +1,18 @@
 body {
-    background-color: #0b0f14;
-    color: #e6e6e6;
-    font-family: Georgia, serif;
     margin: 0;
+    font-family: Georgia, serif;
+    color: #e6e6e6;
+    background: linear-gradient(to bottom, #0b0f14, #020406);
 }
 
 /* MENU */
 nav {
-    background-color: #111827;
+    background-color: rgba(17, 24, 39, 0.9);
     position: fixed;
     top: 0;
     width: 100%;
     border-bottom: 2px solid #c9a96e;
+    backdrop-filter: blur(5px);
 }
 
 nav ul {
@@ -36,30 +37,66 @@ nav a:hover {
     color: white;
 }
 
-/* CONTENU */
-header {
-    padding: 80px 20px 20px; /* important pour pas cacher le texte sous le menu */
+/* HERO */
+.hero {
     text-align: center;
+    padding: 120px 20px 60px;
+    background: radial-gradient(circle at center, #111827, #020406);
+    border-bottom: 2px solid #c9a96e;
 }
 
-h1 {
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
     color: #c9a96e;
 }
 
-h2 {
-    color: #7ccfff;
+.hero p {
+    color: #aaa;
 }
 
-section {
-    padding: 20px;
-    max-width: 800px;
+/* CONTENU */
+main {
+    max-width: 900px;
     margin: auto;
+    padding: 20px;
 }
 
-a {
+/* CARTES */
+.card {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid #c9a96e33;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* TITRES */
+.card h2 {
+    color: #7ccfff;
+    border-bottom: 1px solid #c9a96e;
+    padding-bottom: 5px;
+}
+
+/* BOUTONS */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: 1px solid #c9a96e;
+    border-radius: 5px;
     color: #c9a96e;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-a:hover {
-    color: white;
+.btn:hover {
+    background-color: #c9a96e;
+    color: black;
 }
