@@ -6,7 +6,7 @@ root {
     --section-background-color: #333b;
     --section-outline-color: #c9a96e33;
     
-    background: fixed linear-gradient(190deg,var(--background-color-2),var(--background-color-2);
+    background: fixed linear-gradient(190deg,var(--background-color-2),var(--background-color-2));
 }
 
 body {
