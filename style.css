@@ -20,14 +20,24 @@ h2 {
     color: #7ccfff;
 }
 
+h3 {
+    color: #c9a96e;
+    margin-top: 20px;
+}
+
 section {
     padding: 20px;
     max-width: 800px;
     margin: auto;
 }
 
+p {
+    line-height: 1.6;
+}
+
 a {
     color: #c9a96e;
+    text-decoration: none;
 }
 
 a:hover {
