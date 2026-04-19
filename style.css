@@ -59,7 +59,7 @@ a:hover {
 .hero {
     text-align: center;
     padding: 120px 20px 60px;
-    background: radial-gradient(circle at center, #111827, #020406);
+    background: radial-gradient(circle at center, #1c2a52, #070b2b);
     border-bottom: 2px solid var(--accent-color);
 }
 
