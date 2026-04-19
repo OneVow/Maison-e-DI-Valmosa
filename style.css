@@ -1,5 +1,35 @@
 body {
-    background-color: black;
+    background-color: #0b0f14;
+    color: #e6e6e6;
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+header {
+    background-color: #111827;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #c9a96e;
+}
+
+h1 {
+    color: #c9a96e;
+}
+
+h2 {
+    color: #7ccfff;
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+a {
+    color: #c9a96e;
+}
+
+a:hover {
     color: white;
-    font-family: Arial;
 }
