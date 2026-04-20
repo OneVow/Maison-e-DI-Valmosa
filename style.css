@@ -12,10 +12,25 @@ body {
     margin: 0;
     font-family: Georgia, serif;
     color: var(--text-color);
-    background: transparent; /* 🔥 important */
+
+    background-image: 
+        url("images/img1.png"),
+        url("images/img2.png"),
+        url("images/img3.png"),
+        url("images/img4.png");
+
+    background-size: 25% 50%;
+    background-position: 
+        top left,
+        top right,
+        bottom left,
+        bottom right;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 /* PATCHWORK BACKGROUND */
-body::before {
+/*body::before {
     content: "";
     position: fixed;
     top: 0;
