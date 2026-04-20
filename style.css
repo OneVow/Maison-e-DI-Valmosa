@@ -332,3 +332,77 @@ body.character-odal {
     border-color: #ff6347;
     box-shadow: 0 15px 40px rgba(255, 99, 71, 0.3);
 }
+/* FEUILLE PERSONNAGE */
+.character-sheet {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.character-info {
+    text-align: center;
+    position: sticky;
+    top: 100px;
+}
+
+/* IMAGE PORTRAIT PAGE PERSO */
+.character-portrait {
+    width: 300px;
+    height: 400px;
+    border: 3px solid var(--accent-color);
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.character-info p {
+    font-size: 1.1em;
+    color: #7ccfff;
+    margin-top: 20px;
+}
+
+.character-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* AVATAR TETE CIRCULAIRE PAGE MEMBRES */
+.member-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+    margin: 15px auto;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover .member-avatar {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .character-sheet {
+        grid-template-columns: 1fr;
+    }
+    
+    .character-info {
+        position: static;
+    }
+    
+    .character-portrait {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        margin: 0 auto 20px;
+    }
+}
