@@ -13,18 +13,24 @@ body {
     font-family: Georgia, serif;
     color: var(--text-color);
 
+    /*  fond bleu plus clair que le header */
+    background-color: #1a2f6b;
+
     background-image: 
         url("images/img1.png"),
         url("images/img2.png"),
         url("images/img3.png"),
         url("images/img4.png");
 
-    background-size: 25% 50%;
+    /*  garde les proportions */
+    background-size: contain;
+
+    /*  centre les images */
     background-position: 
-        top left,
-        top right,
-        bottom left,
-        bottom right;
+        center top,
+        center 30%,
+        center 60%,
+        center bottom;
 
     background-repeat: no-repeat;
     background-attachment: fixed;
