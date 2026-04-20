@@ -194,3 +194,10 @@ h2 {
         text-shadow: 0 0 5px var(--accent-color);
     }
 }
+.card {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
