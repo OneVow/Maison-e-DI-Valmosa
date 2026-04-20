@@ -196,3 +196,106 @@ body.character-odal {
         linear-gradient(rgba(5,5,10,0.7), rgba(5,5,10,0.8)),
         url("images/odal-bg.png") center/cover no-repeat fixed;
 }
+/* GRILLE MEMBRES */
+.member-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+/* CARTES MEMBRES */
+.member-card {
+    background: linear-gradient(135deg, rgba(25, 35, 60, 0.9), rgba(40, 50, 80, 0.85));
+    border: 2px solid var(--section-outline-color);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.member-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(201,169,110,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.member-card:hover::before {
+    left: 100%;
+}
+
+.member-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(201, 169, 110, 0.4);
+    border-color: var(--accent-color);
+    background: linear-gradient(135deg, rgba(35, 45, 80, 0.95), rgba(50, 60, 100, 0.9));
+}
+
+/* ICÔNE MEMBRE */
+.member-icon {
+    font-size: 3.5em;
+    margin: 15px 0;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover .member-icon {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* NOM MEMBRE */
+.member-card h3 {
+    font-size: 1.5em;
+    color: var(--accent-color);
+    margin: 15px 0 8px;
+}
+
+/* RÔLE MEMBRE */
+.member-role {
+    font-size: 0.95em;
+    color: #7ccfff;
+    font-style: italic;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* COULEURS PAR PERSONNAGE */
+.member-edwardo:hover {
+    border-color: #ffb347;
+    box-shadow: 0 15px 40px rgba(255, 179, 71, 0.3);
+}
+
+.member-odal:hover {
+    border-color: #9370db;
+    box-shadow: 0 15px 40px rgba(147, 112, 219, 0.3);
+}
+
+.member-alba:hover {
+    border-color: #20b2aa;
+    box-shadow: 0 15px 40px rgba(32, 178, 170, 0.3);
+}
+
+.member-rodrigo:hover {
+    border-color: #daa520;
+    box-shadow: 0 15px 40px rgba(218, 165, 32, 0.3);
+}
+
+.member-alessio:hover {
+    border-color: #87ceeb;
+    box-shadow: 0 15px 40px rgba(135, 206, 235, 0.3);
+}
+
+.member-aurelio:hover {
+    border-color: #ff6347;
+    box-shadow: 0 15px 40px rgba(255, 99, 71, 0.3);
+}
