@@ -7,56 +7,14 @@
     --section-outline-color: #c9a96e33;
     --section-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
+
 /* BASE */
 body {
     margin: 0;
     font-family: Georgia, serif;
     color: var(--text-color);
-
-    /*  fond bleu plus clair que le header */
-    background-color: #1a2f6b;
-
-    background-image: 
-        url("images/img1.png"),
-        url("images/img2.png"),
-        url("images/img3.png"),
-        url("images/img4.png");
-
-    /*  garde les proportions */
-    background-size: contain;
-
-    /*  centre les images */
-    background-position: 
-        center top,
-        center 30%,
-        center 60%,
-        center bottom;
-
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
-/* PATCHWORK BACKGROUND */
-/*body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 
-    z-index: -1;
-
-    background-image: 
-        url("images/img1.png"),
-        url("images/img2.png"),
-        url("images/img3.png"),
-        url("images/img4.png");
-
-    background-size: 300px;
-    background-repeat: repeat;
-
-    opacity: 0.25;
-}
 /* MENU */
 nav {
     background-color: var(--background-color-2);
@@ -64,7 +22,6 @@ nav {
     top: 0;
     width: 100%;
     border-bottom: 2px solid var(--accent-color);
-    backdrop-filter: blur(5px);
 }
 
 nav ul {
@@ -85,10 +42,6 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
-    color: white;
-}
-
 /* HERO */
 .hero {
     text-align: center;
@@ -99,7 +52,6 @@ nav a:hover {
 
 .hero h1 {
     font-size: 3em;
-    margin: 0;
     color: var(--accent-color);
 }
 
@@ -135,46 +87,62 @@ h2 {
     border-radius: 5px;
     color: var(--accent-color);
     text-decoration: none;
-    margin-right: 10px;
 }
 
-.btn:hover {
-    background-color: var(--accent-color);
-    color: black;
+/* BACKGROUND PAR PAGE */
+
+body.home {
+    background:
+        linear-gradient(rgba(20,30,70,0.7), rgba(20,30,70,0.9)),
+        url("images/home.png") center/cover no-repeat fixed;
 }
 
-/* LISTE MEMBRES */
-.member-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+body.maisonnee {
+    background:
+        linear-gradient(rgba(20,30,70,0.7), rgba(20,30,70,0.9)),
+        url("images/maisonnee.png") center/cover no-repeat fixed;
 }
 
-/* CARTE MEMBRE */
-.member-card {
-    flex: 1 1 250px;
-    background-color: rgba(0,0,0,0.6);
-    border: 1px solid var(--section-outline-color);
-    border-radius: 10px;
-    padding: 15px;
-    text-decoration: none;
-    color: var(--text-color);
-    transition: 0.3s;
+body.membres {
+    background:
+        linear-gradient(rgba(20,30,70,0.7), rgba(20,30,70,0.9)),
+        url("images/membres.png") center/cover no-repeat fixed;
 }
 
-.member-card:hover {
-    transform: scale(1.05);
-    background-color: var(--section-background-color);
+/* PERSONNAGES */
+
+body.character-edwardo {
+    background:
+        linear-gradient(rgba(10,20,40,0.8), rgba(10,20,40,0.95)),
+        url("images/edwardo-bg.png") center/cover no-repeat fixed;
 }
 
-.member-card h3 {
-    color: var(--accent-color);
+body.character-alessio {
+    background:
+        linear-gradient(rgba(10,20,40,0.8), rgba(10,20,40,0.95)),
+        url("images/alessio-bg.png") center/cover no-repeat fixed;
 }
 
-.member-card h3 a {
-    text-decoration: none;
+body.character-rodrigo {
+    background:
+        linear-gradient(rgba(10,20,40,0.8), rgba(10,20,40,0.95)),
+        url("images/rodrigo-bg.png") center/cover no-repeat fixed;
 }
 
-.member-card h3 a:hover {
-    text-shadow: 0 0 5px var(--accent-color);
+body.character-aurelio {
+    background:
+        linear-gradient(rgba(10,20,40,0.8), rgba(10,20,40,0.95)),
+        url("images/aurelio-bg.png") center/cover no-repeat fixed;
+}
+
+body.character-alba {
+    background:
+        linear-gradient(rgba(10,20,40,0.8), rgba(10,20,40,0.95)),
+        url("images/alba-bg.png") center/cover no-repeat fixed;
+}
+
+body.character-odal {
+    background:
+        linear-gradient(rgba(5,5,10,0.9), rgba(5,5,10,1)),
+        url("images/odal-bg.png") center/cover no-repeat fixed;
 }
