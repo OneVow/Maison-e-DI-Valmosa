@@ -194,39 +194,41 @@ body.membres {
 
 /* PERSONNAGES */
 
+/* PERSONNAGES */
+
 body.character-edwardo {
     background:
-        linear-gradient(rgba(10,20,40,0.5), rgba(10,20,40,0.6)),
+        linear-gradient(rgba(10,20,40,0.2), rgba(10,20,40,0.3)),
         url("images/edwardo-bg.png") center/cover no-repeat fixed;
 }
 
 body.character-alessio {
     background:
-        linear-gradient(rgba(10,20,40,0.5), rgba(10,20,40,0.6)),
+        linear-gradient(rgba(10,20,40,0.2), rgba(10,20,40,0.3)),
         url("images/alessio-bg.png") center/cover no-repeat fixed;
 }
 
 body.character-rodrigo {
     background:
-        linear-gradient(rgba(10,20,40,0.5), rgba(10,20,40,0.6)),
+        linear-gradient(rgba(10,20,40,0.2), rgba(10,20,40,0.3)),
         url("images/rodrigo-bg.png") center/cover no-repeat fixed;
 }
 
 body.character-aurelio {
     background:
-        linear-gradient(rgba(10,20,40,0.5), rgba(10,20,40,0.6)),
+        linear-gradient(rgba(10,20,40,0.2), rgba(10,20,40,0.3)),
         url("images/aurelio-bg.png") center/cover no-repeat fixed;
 }
 
 body.character-alba {
     background:
-        linear-gradient(rgba(10,20,40,0.5), rgba(10,20,40,0.6)),
+        linear-gradient(rgba(10,20,40,0.2), rgba(10,20,40,0.3)),
         url("images/alba-bg.png") center/cover no-repeat fixed;
 }
 
 body.character-odal {
     background:
-        linear-gradient(rgba(5,5,10,0.7), rgba(5,5,10,0.8)),
+        linear-gradient(rgba(5,5,10,0.2), rgba(5,5,10,0.3)),
         url("images/odal-bg.png") center/cover no-repeat fixed;
 }
 /* GRILLE MEMBRES */
