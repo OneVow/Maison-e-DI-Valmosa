@@ -12,9 +12,8 @@ body {
     margin: 0;
     font-family: Georgia, serif;
     color: var(--text-color);
-    background: #0a0a0a;
+    background: transparent; /* 🔥 important */
 }
-
 /* PATCHWORK BACKGROUND */
 body::before {
     content: "";
@@ -23,6 +22,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
+
     z-index: -1;
 
     background-image: 
@@ -34,7 +34,7 @@ body::before {
     background-size: 300px;
     background-repeat: repeat;
 
-    opacity: 0.2;
+    opacity: 0.25;
 }
 /* MENU */
 nav {
