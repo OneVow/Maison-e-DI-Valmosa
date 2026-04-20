@@ -424,11 +424,10 @@ body[class*="character-"]::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, rgba(20,30,70,0.3) 0%, rgba(5,5,10,0.7) 100%);
+    background: radial-gradient(circle at center, rgba(20,30,70,0.1) 0%, rgba(5,5,10,0.2) 100%);
     pointer-events: none;
     z-index: 1;
 }
-
 /* IMAGE AVEC BORDURE DORÉE (alternative) */
 .character-bg-image {
     position: fixed;
