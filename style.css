@@ -453,20 +453,29 @@ body[class*="character-"] {
     padding: 0;
 }
 
-/* LOGOS */
+/* Permet d'ajouter les logos sans casser le menu */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Le menu prend toute la place et reste centré */
+nav ul {
+    flex: 1;
+}
+
+/* Logos */
 .nav-logo {
     width: 40px;
     height: 40px;
-    transition: transform 0.3s ease;
+    object-fit: contain;
+    margin: 0 15px;
+}
+.nav-logo:first-child {
+    margin-left: 10px;
 }
 
-.nav-logo:hover {
-    transform: rotate(10deg) scale(1.1);
-}
-.nav-logo.left {
+.nav-logo:last-child {
     margin-right: 10px;
 }
 
-.nav-logo.right {
-    margin-left: 10px;
-}
