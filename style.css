@@ -420,8 +420,7 @@ body[class*="character-"] {
 body[class*="character-"] {
     background-color: #000 !important;
 }
-
-body[class*="character-"]::before {
+/*body[class*="character-"]::before {
     content: '';
     position: fixed;
     top: 0;
@@ -432,4 +431,4 @@ body[class*="character-"]::before {
     pointer-events: none;
     z-index: 1;
 }
-
+*/
