@@ -478,4 +478,37 @@ nav ul {
 .nav-logo:last-child {
     margin-right: 10px;
 }
+/* GALERIE */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
 
+.gallery-item {
+    background: rgba(25, 35, 60, 0.8);
+    border: 2px solid var(--section-outline-color);
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-item p {
+    padding: 15px;
+    font-style: italic;
+    color: #7ccfff;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(201,169,110,0.3);
+    border-color: var(--accent-color);
+}
